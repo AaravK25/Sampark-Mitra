@@ -65,4 +65,4 @@ with gr.Blocks(title="Sampark Mitra") as demo:
     )
 
 if __name__ == "__main__":
-    demo.launch(css=CSS, js=GLOBAL_JS)
+    demo.launch(css=CSS, js=GLOBAL_JS, share=True)
