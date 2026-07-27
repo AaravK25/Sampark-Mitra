@@ -83,6 +83,10 @@ def build_home_page():
     animation:hintBlink 2.8s ease-in-out infinite;
   }}
   @keyframes hintBlink {{ 0%,100%{{opacity:.3}} 50%{{opacity:.9}} }}
+  .home-disclaimer {{
+    margin-top:14px; font-size:.7rem; color:rgba(226,232,240,.45);
+    max-width:320px; line-height:1.4;
+  }}
 
   .scattered-tag {{
     position:absolute;
@@ -144,6 +148,7 @@ def build_home_page():
     <h1 class="home-title">Sampark Mitra</h1>
     <p class="home-subtitle">AI-powered emergency assistant for rural India</p>
     <p class="home-hint">Tap any word to begin</p>
+    <p class="home-disclaimer">This is an AI assistant, not a doctor. In a real emergency, call 108.</p>
   </div>
   {buttons_html}
   <div id="lang-grid-mobile">
@@ -160,7 +165,8 @@ def build_orb_page(tag="NORMAL", response_text="",
                    upload_label="Upload Photo", mic_state="idle",
                    ready_label="Ready for Health Triage", show_ready=True,
                    recording_label="Recording... tap to stop",
-                   processing_label="Processing..."):
+                   processing_label="Processing...",
+                   disclaimer_label="This is an AI assistant, not a doctor. In a real emergency, call 108."):
     tag_color = {
         "[EMERGENCY]":      "#ef4444",
         "[REQUEST IMAGE]":  "#f59e0b",
@@ -372,6 +378,15 @@ def build_orb_page(tag="NORMAL", response_text="",
     box-shadow:0 6px 35px rgba(245,158,11,.6);
   }}
 
+  .ai-disclaimer {{
+    width:100%; max-width:520px; margin:0 auto 10px; text-align:center;
+    font-size:.7rem; line-height:1.4; color:rgba(226,232,240,.5);
+    padding:6px 14px; box-sizing:border-box;
+  }}
+  @media (max-width:600px) {{
+    .ai-disclaimer {{ font-size:.65rem; padding:4px 10px; }}
+  }}
+
   .status-card {{
     background:rgba(255,255,255,.06); border:1px solid rgba(255,255,255,.15);
     border-radius:16px; padding:1.2rem; width:100%; max-width:520px;
@@ -419,6 +434,8 @@ def build_orb_page(tag="NORMAL", response_text="",
     <div class="orb-logo">Sampark Mitra</div>
     <button class="back-btn" onclick="sendTrigger('__HOME__')">{back_label}</button>
   </div>
+
+  <div class="ai-disclaimer">{disclaimer_label}</div>
 
   <div class="orb-body">
     {ready_html}
