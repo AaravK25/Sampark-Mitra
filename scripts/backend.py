@@ -74,7 +74,7 @@ LANGUAGES = [
         "back": "वापस जाएं",    "press": "बात करने के लिए दबाएं", "upload": "फोटो भेजें",
         "ready": "स्वास्थ्य ट्राइएज के लिए तैयार",
         "recording": "रिकॉर्डिंग हो रही है... रोकने के लिए दबाएं", "processing": "प्रोसेस हो रहा है...",
-        "disclaimer": "⚠️ यह AI सहायक केवल प्रारंभिक मार्गदर्शन के लिए है। आपातकाल में तुरंत 112 डायल करें। यह चिकित्सा सलाह का विकल्प नहीं है।",
+        "disclaimer": "यह एक AI सहायक है, डॉक्टर नहीं। असली आपातकाल में 108 पर कॉल करें।",
         "top": "15%", "left": "12%", "delay": "0s",   "rot": "-4deg"
     },
     {
@@ -82,7 +82,7 @@ LANGUAGES = [
         "back": "முகப்பு",      "press": "பேச அழுத்தவும்",        "upload": "படம் அனுப்பவும்",
         "ready": "சுகாதார த்ரியேஜுக்கு தயார்",
         "recording": "பதிவு செய்யப்படுகிறது... நிறுத்த அழுத்தவும்", "processing": "செயலாக்கம் நடைபெறுகிறது...",
-        "disclaimer": "⚠️ இது AI உதவியாளர் மட்டுமே — ஆரம்ப வழிகாட்டுதலுக்காக. அவசரநிலையில் 112 அழைக்கவும். இது மருத்துவ ஆலோசனைக்கு மாற்றாகாது.",
+        "disclaimer": "இது ஒரு AI உதவியாளர், மருத்துவர் அல்ல. அவசரநிலையில் 108-ஐ அழைக்கவும்.",
         "top": "22%", "left": "75%", "delay": "0.5s", "rot": "5deg"
     },
     {
@@ -90,7 +90,7 @@ LANGUAGES = [
         "back": "హోమ్",         "press": "మాట్లాడటానికి నొక్కండి", "upload": "ఫోటో పంపండి",
         "ready": "ఆరోగ్య ట్రయాజ్ కోసం సిద్ధంగా ఉంది",
         "recording": "రికార్డింగ్ జరుగుతోంది... ఆపడానికి నొక్కండి", "processing": "ప్రాసెస్ అవుతోంది...",
-        "disclaimer": "⚠️ ఇది AI సహాయకుడు మాత్రమే — ప్రాథమిక మార్గదర్శకత్వం కోసం. అత్యవసర పరిస్థితిలో 112 డయల్ చేయండి. ఇది వైద్య సలహాకు ప్రత్యామ్నాయం కాదు.",
+        "disclaimer": "ఇది ఒక AI సహాయకుడు, వైద్యుడు కాదు. అత్యవసర పరిస్థితిలో 108కి కాల్ చేయండి.",
         "top": "35%", "left": "8%",  "delay": "1.2s", "rot": "-3deg"
     },
     {
@@ -98,6 +98,7 @@ LANGUAGES = [
         "back": "ಮುಖಪುಟ",       "press": "ಮಾತನಾಡಲು ಒತ್ತಿರಿ",       "upload": "ಚಿತ್ರ ಕಳುಹಿಸಿ",
         "ready": "ಆರೋಗ್ಯ ಟ್ರಯಾಜ್‌ಗೆ ಸಿದ್ಧವಾಗಿದೆ",
         "recording": "ರೆಕಾರ್ಡಿಂಗ್ ಆಗುತ್ತಿದೆ... ನಿಲ್ಲಿಸಲು ಒತ್ತಿರಿ", "processing": "ಪ್ರಕ್ರಿಯೆಗೊಳ್ಳುತ್ತಿದೆ...",
+        "disclaimer": "ಇದು ಒಂದು AI ಸಹಾಯಕ, ವೈದ್ಯರಲ್ಲ. ತುರ್ತು ಸಂದರ್ಭದಲ್ಲಿ 108 ಗೆ ಕರೆ ಮಾಡಿ.",
         "top": "70%", "left": "15%", "delay": "0.8s", "rot": "6deg"
     },
     {
@@ -105,6 +106,7 @@ LANGUAGES = [
         "back": "হোমে ফিরুন",   "press": "কথা বলতে চাপুন",       "upload": "ছবি পাঠান",
         "ready": "স্বাস্থ্য ট্রাইয়েজের জন্য প্রস্তুত",
         "recording": "রেকর্ডিং হচ্ছে... থামাতে চাপুন", "processing": "প্রক্রিয়াকরণ হচ্ছে...",
+        "disclaimer": "এটি একটি AI সহায়ক, ডাক্তার নয়। জরুরি অবস্থায় ১০৮ নম্বরে কল করুন।",
         "top": "18%", "left": "45%", "delay": "1.5s", "rot": "-2deg"
     },
     {
@@ -112,6 +114,7 @@ LANGUAGES = [
         "back": "પાછા જાઓ",     "press": "બોલવા માટે દબાવો",      "upload": "ફોટો મોકલો",
         "ready": "આરોગ્ય ટ્રાઇએજ માટે તૈયાર",
         "recording": "રેકોર્ડિંગ થઈ રહ્યું છે... રોકવા માટે દબાવો", "processing": "પ્રક્રિયા થઈ રહી છે...",
+        "disclaimer": "આ એક AI સહાયક છે, ડોક્ટર નથી. કટોકટીમાં 108 પર કૉલ કરો.",
         "top": "75%", "left": "78%", "delay": "0.3s", "rot": "-5deg"
     },
     {
@@ -119,6 +122,7 @@ LANGUAGES = [
         "back": "मुख्यपृष्ठ",   "press": "बोलण्यासाठी दाबा",      "upload": "फोटो पाठवा",
         "ready": "आरोग्य ट्रायेजसाठी तयार",
         "recording": "रेकॉर्डिंग सुरू आहे... थांबवण्यासाठी दाबा", "processing": "प्रक्रिया सुरू आहे...",
+        "disclaimer": "हे एक AI सहाय्यक आहे, डॉक्टर नाही. आणीबाणीत १०८ वर कॉल करा.",
         "top": "62%", "left": "48%", "delay": "1.0s", "rot": "4deg"
     },
     {
@@ -126,6 +130,7 @@ LANGUAGES = [
         "back": "ਵਾਪਸ ਜਾਓ",    "press": "ਗੱਲ ਕਰਨ ਲਈ ਦਬਾਓ",      "upload": "ਫੋਟੋ ਭੇਜੋ",
         "ready": "ਸਿਹਤ ਟ੍ਰਾਇਏਜ ਲਈ ਤਿਆਰ",
         "recording": "ਰਿਕਾਰਡਿੰਗ ਹੋ ਰਹੀ ਹੈ... ਰੋਕਣ ਲਈ ਦਬਾਓ", "processing": "ਪ੍ਰੋਸੈਸਿੰਗ ਹੋ ਰਹੀ ਹੈ...",
+        "disclaimer": "ਇਹ ਇੱਕ AI ਸਹਾਇਕ ਹੈ, ਡਾਕਟਰ ਨਹੀਂ। ਐਮਰਜੈਂਸੀ ਵਿੱਚ 108 'ਤੇ ਕਾਲ ਕਰੋ।",
         "top": "40%", "left": "82%", "delay": "1.7s", "rot": "-6deg"
     },
     {
@@ -133,6 +138,7 @@ LANGUAGES = [
         "back": "ମୂଳପୃଷ୍ଠା",   "press": "କଥା ହେବାକୁ ଦବାନ୍ତୁ",     "upload": "ଫଟୋ ପଠାନ୍ତୁ",
         "ready": "ସ୍ୱାସ୍ଥ୍ୟ ଟ୍ରାଏଜ ପାଇଁ ପ୍ରସ୍ତୁତ",
         "recording": "ରେକର୍ଡିଂ ହେଉଛି... ବନ୍ଦ କରିବାକୁ ଦବାନ୍ତୁ", "processing": "ପ୍ରକ୍ରିୟାକରଣ ହେଉଛି...",
+        "disclaimer": "ଏହା ଏକ AI ସହାୟକ, ଡାକ୍ତର ନୁହେଁ। ଜରୁରୀକାଳୀନ ପରିସ୍ଥିତିରେ 108 କୁ କଲ୍ କରନ୍ତୁ।",
         "top": "80%", "left": "35%", "delay": "0.6s", "rot": "3deg"
     },
     {
@@ -140,6 +146,7 @@ LANGUAGES = [
         "back": "ঘূৰি যাওক",    "press": "কথা পাতিবলৈ টিপক",      "upload": "ছবি পঠিয়াওক",
         "ready": "স্বাস্থ্য ট্ৰাইয়েজৰ বাবে সাজু",
         "recording": "ৰেকৰ্ডিং হৈ আছে... বন্ধ কৰিবলৈ টিপক", "processing": "প্ৰক্ৰিয়াকৰণ চলি আছে...",
+        "disclaimer": "এইটো এটা AI সহায়ক, চিকিৎসক নহয়। জৰুৰীকালীন অৱস্থাত ১০৮ নম্বৰত কল কৰক।",
         "top": "50%", "left": "20%", "delay": "1.4s", "rot": "-4deg"
     },
     {
@@ -147,6 +154,7 @@ LANGUAGES = [
         "back": "Back Home",     "press": "Press to Talk",        "upload": "Upload Photo",
         "ready": "Ready for Health Triage",
         "recording": "Recording... tap to stop", "processing": "Processing...",
+        "disclaimer": "This is an AI assistant, not a doctor. In a real emergency, call 108.",
         "top": "82%", "left": "60%", "delay": "0.9s", "rot": "2deg"
     },
 ]
@@ -158,6 +166,7 @@ LANG_UPLOAD_MAP     = {item["lang"]: item["upload"]     for item in LANGUAGES}
 LANG_READY_MAP      = {item["lang"]: item["ready"]      for item in LANGUAGES}
 LANG_RECORDING_MAP  = {item["lang"]: item["recording"]  for item in LANGUAGES}
 LANG_PROCESSING_MAP = {item["lang"]: item["processing"] for item in LANGUAGES}
+LANG_DISCLAIMER_MAP = {item["lang"]: item["disclaimer"] for item in LANGUAGES}
 
 # Per-browser-session state.
 # threaded through each handler explicitly instead.
@@ -169,7 +178,8 @@ def default_session_state():
         "upload_label": "Upload Photo",
         "ready_label": "Ready for Health Triage",
         "recording_label": "Recording... tap to stop",
-        "processing_label": "Processing..."
+        "processing_label": "Processing...",
+        "disclaimer_label": "This is an AI assistant, not a doctor. In a real emergency, call 108."
     }
 
 # ---------------------------------------------------------------------------
