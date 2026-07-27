@@ -26,6 +26,7 @@ from backend import (
     LANG_READY_MAP,
     LANG_RECORDING_MAP,
     LANG_PROCESSING_MAP,
+    LANG_DISCLAIMER_MAP,
 )
 from pages import build_home_page, build_orb_page
 
@@ -372,6 +373,9 @@ def handle_route(trigger, session_state):
         processing_label = parts[5] if len(parts) > 5 else LANG_PROCESSING_MAP.get(lang_name, "Processing...")
         lang_code        = LANG_CODE_MAP.get(lang_name, "hi-IN")
         ready_label      = LANG_READY_MAP.get(lang_name, "Ready for Health Triage")
+        disclaimer_label = LANG_DISCLAIMER_MAP.get(
+            lang_name, "This is an AI assistant, not a doctor. In a real emergency, call 108."
+        )
 
         session_state["lang_code"]         = lang_code
         session_state["back_label"]        = back_label
@@ -380,6 +384,7 @@ def handle_route(trigger, session_state):
         session_state["ready_label"]       = ready_label
         session_state["recording_label"]   = recording_label
         session_state["processing_label"]  = processing_label
+        session_state["disclaimer_label"]  = disclaimer_label
 
         orb = build_orb_page(
             back_label=back_label,
@@ -388,6 +393,7 @@ def handle_route(trigger, session_state):
             ready_label=ready_label,
             recording_label=recording_label,
             processing_label=processing_label,
+            disclaimer_label=disclaimer_label,
             show_ready=True,
             mic_state="idle"
         )
@@ -410,6 +416,9 @@ def handle_audio_b64(audio_b64: str, session_state, request: gr.Request):
     ready_label       = session_state.get("ready_label",       "Ready for Health Triage")
     recording_label   = session_state.get("recording_label",   "Recording... tap to stop")
     processing_label  = session_state.get("processing_label",  "Processing...")
+    disclaimer_label  = session_state.get(
+        "disclaimer_label", "This is an AI assistant, not a doctor. In a real emergency, call 108."
+    )
 
     def error_page(msg):
         return (
@@ -421,6 +430,7 @@ def handle_audio_b64(audio_b64: str, session_state, request: gr.Request):
                 ready_label=ready_label,
                 recording_label=recording_label,
                 processing_label=processing_label,
+                disclaimer_label=disclaimer_label,
                 show_ready=False,
                 mic_state="idle"
             ),
@@ -548,6 +558,7 @@ def handle_audio_b64(audio_b64: str, session_state, request: gr.Request):
         ready_label=ready_label,
         recording_label=recording_label,
         processing_label=processing_label,
+        disclaimer_label=disclaimer_label,
         show_ready=False,
         mic_state="idle"
     )
@@ -567,6 +578,9 @@ def handle_image_b64(image_b64: str, session_state, request: gr.Request):
     ready_label       = session_state.get("ready_label",       "Ready for Health Triage")
     recording_label   = session_state.get("recording_label",   "Recording... tap to stop")
     processing_label  = session_state.get("processing_label",  "Processing...")
+    disclaimer_label  = session_state.get(
+        "disclaimer_label", "This is an AI assistant, not a doctor. In a real emergency, call 108."
+    )
 
     if not image_b64 or len(image_b64) < 100:
         return build_orb_page(
@@ -577,6 +591,7 @@ def handle_image_b64(image_b64: str, session_state, request: gr.Request):
             ready_label=ready_label,
             recording_label=recording_label,
             processing_label=processing_label,
+            disclaimer_label=disclaimer_label,
             show_ready=False
         ), None, session_state
 
@@ -609,6 +624,7 @@ def handle_image_b64(image_b64: str, session_state, request: gr.Request):
             ready_label=ready_label,
             recording_label=recording_label,
             processing_label=processing_label,
+            disclaimer_label=disclaimer_label,
             show_ready=False
         ), None, session_state
 
@@ -631,8 +647,8 @@ def handle_image_b64(image_b64: str, session_state, request: gr.Request):
         ready_label=ready_label,
         recording_label=recording_label,
         processing_label=processing_label,
+        disclaimer_label=disclaimer_label,
         show_ready=False,
         mic_state="idle"
     )
     return orb, audio_out, session_state
-
